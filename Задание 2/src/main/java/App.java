@@ -1,36 +1,43 @@
 
 
-import java.util.Scanner;
 
+import java.util.Scanner;
+import logic.*;
 /**
  * @author Ярослав Чернышев appline
  * @version 0.0.1
  */
+
 class App {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
+        boolean AppClose = false;
+do {
+    System.out.println("Введите  \"1\"(запуститься выполнение калькулятора) или \"2\"(поиск максимального слова в массиве)");
 
-        System.out.println("Введите первое дробное число :");
-        //проверка введенных данных
-        while (!scanner.hasNextDouble()) {
-            System.out.println("Не верный формат введите число в формате : \"0,0\"");
-            scanner.next();
-        }
-        Double a = scanner.nextDouble();
+    String NumberApp = scanner.next();
 
-        System.out.println("Введите второе дробное число :");
-        //проверка введенных данных
-        while (!scanner.hasNextDouble()) {
-            System.out.println("Не верный формат введите число в формате : \"0,0\"");
-            scanner.next();
-        }
-        double b = scanner.nextDouble();
+    switch (NumberApp) {
+        case "1":
+            calculator.calculation(scanner);
+            break;
+        case "2":
+            stringArray.FindStringArray(scanner);
+            break;
+    }
 
-        double c = a + b;
-        System.out.print("cумма чисел равна: ");
-        System.out.printf("%.4f", c);
+    System.out.println("Введите  \"1\" для закрытия или любой символ для продолжения работы программы");
+
+    if (scanner.next().equals("1"))
+    {
+     AppClose = true;
+    }
+}while (!AppClose);
 
         scanner.close();
 
     }
 }
+
+
