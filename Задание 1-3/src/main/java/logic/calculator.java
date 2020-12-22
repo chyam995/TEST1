@@ -27,7 +27,7 @@ public class calculator {
         }
     }
 
-    //функия сложения
+    //метод сложения
     public static void addition(Scanner scanner)
     {
         System.out.println("Введите первое дробное число :");
@@ -50,7 +50,7 @@ public class calculator {
         System.out.print("Сумма чисел равна: ");
         System.out.printf("%.4f", c);
     }
-    //функия вычитания
+    //метод вычитания
     public static void substaction (Scanner scanner )
     {
         System.out.println("Введите первое дробное число :");
@@ -74,7 +74,7 @@ public class calculator {
         System.out.printf("%.4f", c);
     }
 
-    //функция деления
+    //метод деления
     public static void division (Scanner scanner )
     {
         System.out.println("Введите первое дробное число :");
@@ -101,7 +101,7 @@ public class calculator {
         }
     }
 
-    //функция умножения
+    //метод умножения
     public static void multiplication(Scanner scanner)
     {
         System.out.println("Введите первое дробное число :");
