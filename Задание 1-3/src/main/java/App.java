@@ -13,13 +13,6 @@ class App {
 
         Scanner scanner = new Scanner(System.in);
         boolean AppClose = false;
-        String[] array = {"aa", "bb", "cc", "ab", "bc", "ac"};
-        String expectedValue = "ab";
-        for (int i = 0; i < array.length; i++) {
-            if (expectedValue.equals(array[i])) {
-                System.out.println("expected index is : " + i);
-            }
-        }
 do {
     System.out.println("Введите  \"1\"(запуститься выполнение калькулятора) или \"2\"(поиск максимального слова в массиве)");
 
