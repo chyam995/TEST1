@@ -1,7 +1,5 @@
 package logic;
 
-import java.util.Scanner;
-
 public class addition extends calculator {
 
 
@@ -12,7 +10,6 @@ public class addition extends calculator {
     //метод сложения
     public static void add()
     {
-
         Double c = getA() + getB();
         System.out.print("Сумма чисел равна: ");
         System.out.printf("%.4f", c);

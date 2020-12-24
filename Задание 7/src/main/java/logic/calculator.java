@@ -6,8 +6,26 @@ public class calculator {
     private static Double b;
     private String Math;
 
+    public calculator() {
+    }
 
-    public calculator(String Math,Double a, Double b) {
+    public static void setA(Double a) {
+        calculator.a = a;
+    }
+
+    public static void setB(Double b) {
+        calculator.b = b;
+    }
+
+    public String getMath() {
+        return Math;
+    }
+
+    public void setMath(String math) {
+        Math = math;
+    }
+
+    public calculator(String Math, Double a, Double b) {
         this.Math = Math;
         this.a = a;
         this.b = b;
@@ -25,7 +43,7 @@ public class calculator {
     {
         Double c = 0.0;
         try {
-            switch (this.Math) {
+            switch (getMath()) {
                 case "*":
                     multiplication.multiply();
                     break;
