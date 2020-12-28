@@ -6,8 +6,16 @@ public class calculator {
 
     public static void calculation(Scanner scanner)
     {
+
         System.out.println("введите одно из математических действий [*;/;+;-]");
         String math = scanner.next();
+        /**
+         * вызов метода работы калькулятора в соотвествии переданным математическим действием
+         * @see #division(Scanner)
+         * @see  #addition(Scanner)
+         * @see  #multiplication(Scanner)
+         * @see #substaction(Scanner)
+         */
         switch (math) {
             case "*":
                 multiplication(scanner);
@@ -27,11 +35,15 @@ public class calculator {
         }
     }
 
-    //метод сложения
+    /**
+     * метод сложения чисел
+     */
     public static void addition(Scanner scanner)
     {
         System.out.println("Введите первое дробное число :");
-        //проверка введенных данных
+        /**
+         * проверка введенных данных
+         */
         while (!scanner.hasNextDouble()) {
             System.out.println("Не верный формат введите число в формате : \"0,0\"");
             scanner.next();
@@ -39,7 +51,9 @@ public class calculator {
         double a = scanner.nextDouble();
 
         System.out.println("Введите второе дробное число :");
-        //проверка введенных данных
+        /**
+         * проверка введенных данных
+         */
         while (!scanner.hasNextDouble()) {
             System.out.println("Не верный формат введите число в формате : \"0,0\"");
             scanner.next();
@@ -50,11 +64,15 @@ public class calculator {
         System.out.print("Сумма чисел равна: ");
         System.out.printf("%.4f", c);
     }
-    //метод вычитания
+    /**
+     * метод вычитания
+     */
     public static void substaction (Scanner scanner )
     {
         System.out.println("Введите первое дробное число :");
-        //проверка введенных данных
+        /**
+         * проверка введенных данных
+         */
         while (!scanner.hasNextDouble()) {
             System.out.println("Не верный формат введите число в формате : \"0,0\"");
             scanner.next();
@@ -62,7 +80,9 @@ public class calculator {
         double a = scanner.nextDouble();
 
         System.out.println("Введите второе дробное число :");
-        //проверка введенных данных
+        /**
+         * проверка введенных данных
+         */
         while (!scanner.hasNextDouble()) {
             System.out.println("Не верный формат введите число в формате : \"0,0\"");
             scanner.next();
@@ -74,11 +94,13 @@ public class calculator {
         System.out.printf("%.4f", c);
     }
 
-    //метод деления
+    /**метод деления*/
     public static void division (Scanner scanner )
     {
         System.out.println("Введите первое дробное число :");
-        //проверка введенных данных
+        /**
+         * проверка введенных данных
+         */
         while (!scanner.hasNextDouble()) {
             System.out.println("Не верный формат введите число в формате : \"0,0\"");
             scanner.next();
@@ -86,7 +108,9 @@ public class calculator {
         double a = scanner.nextDouble();
 
         System.out.println("Введите второе дробное число :");
-        //проверка введенных данных
+        /**
+         * проверка введенных данных
+         */
         while (!scanner.hasNextDouble()) {
             System.out.println("Не верный формат введите число в формате : \"0,0\"");
             scanner.next();
@@ -101,11 +125,13 @@ public class calculator {
         }
     }
 
-    //метод умножения
+    /**метод умножения*/
     public static void multiplication(Scanner scanner)
     {
         System.out.println("Введите первое дробное число :");
-        //проверка введенных данных
+        /**
+         * проверка введенных данных
+         */
         while (!scanner.hasNextDouble()) {
             System.out.println("Не верный формат введите число в формате : \"0,0\"");
             scanner.next();
@@ -113,7 +139,9 @@ public class calculator {
         double a = scanner.nextDouble();
 
         System.out.println("Введите второе дробное число :");
-        //проверка введенных данных
+        /**
+         * проверка введенных данных
+         */
         while (!scanner.hasNextDouble()) {
             System.out.println("Не верный формат введите число в формате : \"0,0\"");
             scanner.next();

@@ -17,7 +17,9 @@ do {
     System.out.println("Введите  \"1\"(запуститься выполнение калькулятора) или \"2\"(поиск максимального слова в массиве)");
 
     String NumberApp = scanner.next();
-
+/**
+ * Вызов кальлятора или поиска максимального слова
+ */
     switch (NumberApp) {
         case "1":
             calculator.calculation(scanner);
