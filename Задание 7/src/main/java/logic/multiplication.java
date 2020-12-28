@@ -1,7 +1,5 @@
 package logic;
 
-import java.util.Scanner;
-
 public class multiplication extends calculator {
 
 

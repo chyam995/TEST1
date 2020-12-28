@@ -9,13 +9,12 @@ public class division extends calculator {
         super(Math, a, b);
     }
 
-    public static void split() {
-        try {
-            Double result = getA() / getB();
-            System.out.print("Частное чисел равно: ");
-            System.out.printf("%.4f", result);
-        } catch (ArithmeticException e) {
-            System.out.print(e+ " На ноль делить нельзя");
-        }
+    public static void split() throws Exception {
+            double res = getA() / getB();
+                if(Double.isInfinite(res)) throw (new Exception("INFINITE"));
+                else {
+                    System.out.print("Частное чисел равно: ");
+                    System.out.printf("%.4f", res);
+                }
     }
 }
