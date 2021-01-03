@@ -10,11 +10,16 @@ public class division extends calculator {
     }
 
     public static void split() throws Exception {
-            double res = getA() / getB();
-                if(Double.isInfinite(res)) throw (new Exception("INFINITE"));
-                else {
+            double result = getA() / getB();
+                if(Double.isNaN(result)){
+            throw(new Exception("NAN"));
+                     }
+            else if(Double.isInfinite(result)){
+            throw(new Exception("INFINITE"));
+            }
+            else {
                     System.out.print("Частное чисел равно: ");
-                    System.out.printf("%.4f", res);
+                    System.out.printf("%.4f", result);
                 }
     }
 }
